@@ -2,6 +2,7 @@
 
 from odoo import models, fields, api
 
+
 # class bike-rental(models.Model):
 #     _name = 'bike-rental.bike-rental'
 
@@ -13,9 +14,8 @@ from odoo import models, fields, api
 #     @api.depends('value')
 #     def _value_pc(self):
 #         self.value2 = float(self.value) / 100
-
 class RequestRentModel(models.Model):
-      _name = 'bike_rental.request'
+    _name = 'bike_rental.request'
 
-      name = fields.Char(string="Rental request")
-      partner_id = fields.Many2one('res.users', ondelete='set null', string="Customer", index=True, required=True)
+    name = fields.Char(string="Rental request")
+    partner_id = fields.Many2one('res.users', ondelete='set null', string="Customer", index=True, required=True)
