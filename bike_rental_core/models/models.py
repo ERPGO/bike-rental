@@ -14,7 +14,7 @@ from odoo import models, fields, api
 #     def _value_pc(self):
 #         self.value2 = float(self.value) / 100
 
-  class RequestRentModel(models.Model):
+class RequestRentModel(models.Model):
       _name = 'bike_rental.request'
 
       name = fields.Char(string="Rental request")
