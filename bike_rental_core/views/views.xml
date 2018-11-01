@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="bike-rental.list">
+      <field name="name">bike-rental list</field>
+      <field name="model">bike-rental.bike-rental</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="bike-rental.action_window">
+      <field name="name">bike-rental window</field>
+      <field name="res_model">bike-rental.bike-rental</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="bike-rental.action_server">
+      <field name="name">bike-rental server</field>
+      <field name="model_id" ref="model_bike-rental_bike-rental"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="bike-rental" id="bike-rental.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="bike-rental.menu_1" parent="bike-rental.menu_root"/>
+    <menuitem name="Menu 2" id="bike-rental.menu_2" parent="bike-rental.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="bike-rental.menu_1_list" parent="bike-rental.menu_1"
+              action="bike-rental.action_window"/>
+    <menuitem name="Server to list" id="bike-rental" parent="bike-rental.menu_2"
+              action="bike-rental.action_server"/>
+    -->
+  </data>
+</odoo>
