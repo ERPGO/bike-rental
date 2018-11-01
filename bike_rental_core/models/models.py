@@ -3,8 +3,8 @@
 from odoo import models, fields, api
 
 
-# class bike-rental(models.Model):
-#     _name = 'bike-rental.bike-rental'
+ class bike-rental(models.Model):
+     _name = 'bike-rental.bike-rental'
 
 #     name = fields.Char()
 #     value = fields.Integer()
