@@ -1,1 +1,1 @@
-# bike_rental_core
+# bike_rental
