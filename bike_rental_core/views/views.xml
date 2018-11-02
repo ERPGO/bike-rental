@@ -2,7 +2,7 @@
     <data>
         <!-- explicit list view definition -->
 
-        <record model="ir.ui.view" id="bike_rental.request.list">
+        <record model="ir.ui.view" id="bike_rental.request_list">
             <field name="name">Bike rental request list</field>
             <field name="model">bike_rental.request</field>
             <field name="arch" type="xml">
@@ -14,7 +14,7 @@
         </record>
 
         <!-- FORM view of REQUESTS -->
-        <record model="ir.ui.view" id="bike_rental.request.form">
+        <record model="ir.ui.view" id="bike_rental.request_form">
             <field name="name">Bike rental request form</field>
             <field name="model">bike_rental.request</field>
             <field name="arch" type="xml">
@@ -28,7 +28,7 @@
 
         <!-- actions opening views on models -->
 
-        <record model="ir.actions.act_window" id="bike_rental.action_window.request">
+        <record model="ir.actions.act_window" id="bike_rental.action_window_request">
             <field name="name">Bike Rental Request</field>
             <field name="res_model">bike_rental.request</field>
             <field name="view_mode">tree,form</field>
