@@ -52,9 +52,9 @@
         -->
 
         <!-- Top menu item -->
-        <menuitem name="bike_rental" id="bike_rental.menu_root"/>
+        <menuitem name="Bike Rental" id="bike_rental.menu_root"/>
         <!-- menu categories -->
-        <menuitem name="Requests" id="bike_rental.menu_requests" parent="bike_rental.menu_root"
+        <menuitem name="Bike Rental Requests" id="bike_rental.menu_requests" parent="bike_rental.menu_root"
                   action="bike_rental.action_window_request"/>
         <!--
         <menuitem name="Menu 2" id="bike-rental.menu_2" parent="bike-rental.menu_root"/>
