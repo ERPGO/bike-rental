@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_bike-rental_bike-rental,bike-rental.bike-rental,model_bike-rental_bike-rental,,1,0,0,0
+access_bike_rental_bike_rental,bike_rental.bike_rental,model_bike_rental_bike_rental,,1,0,0,0
