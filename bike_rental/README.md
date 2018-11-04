@@ -1,2 +1,2 @@
 # bike_rental
-# Core module for this application
+# Core module for this application js
