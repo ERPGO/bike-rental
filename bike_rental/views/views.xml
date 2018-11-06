@@ -18,10 +18,15 @@
             <field name="name">Bike rental request form</field>
             <field name="model">bike_rental.bike_rental</field>
             <field name="arch" type="xml">
-                <form>
-                    <field name="name" string="name"/>
-                    <field name="partner_id" string="Customer"/>
+                <form string="Request Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="partner_id"/>
+                        </group>
+                    </sheet>
                 </form>
+
             </field>
         </record>
 
