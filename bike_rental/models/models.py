@@ -18,4 +18,4 @@ class RequestRentModel(models.Model):
     _name = 'bike_rental.bike_rental'
 
     name = fields.Char(string="Rental request")
-    partner_id = fields.Many2one('res.users', ondelete='set null', string="Customer", index=True, required=True)
+    partner_id = fields.Many2one('res.users', ondelete='set null', string="Customer", stored=True)

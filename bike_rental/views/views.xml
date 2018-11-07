@@ -6,9 +6,9 @@
             <field name="name">Bike rental request list</field>
             <field name="model">bike_rental.bike_rental</field>
             <field name="arch" type="xml">
-                <tree>
-                    <field name="name"/>
-                    <field name="partner_id"/>
+                <tree string="Bike Requests">
+                    <field name="name" modifiers="{}"//>
+                    <field name="partner_id" />
                 </tree>
             </field>
         </record>
