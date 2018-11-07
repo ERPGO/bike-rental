@@ -11,7 +11,7 @@
             which the class' module is installed).
         </field>
         <field name="is_mail_thread" eval="False"/>
-        <field name="model">bike_requests</field>
+        <field name="model">x_bike_requests</field>
         <field name="name">Bike Requests</field>
         <field name="state">manual</field>
         <field name="transient" eval="False"/>
