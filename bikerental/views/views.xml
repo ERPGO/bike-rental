@@ -1,60 +1,20 @@
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="bikerental.list">
-      <field name="name">bikerental list</field>
-      <field name="model">bikerental.bikerental</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
-    -->
+    <record id="bike_request.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb" model="ir.model">
+        <field name="info">Main super-class for regular database-persisted Odoo models.
 
-    <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="bikerental.action_window">
-      <field name="name">bikerental window</field>
-      <field name="res_model">bikerental.bikerental</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-    -->
+            Odoo models are created by inheriting from this class::
 
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="bikerental.action_server">
-      <field name="name">bikerental server</field>
-      <field name="model_id" ref="model_bikerental_bikerental"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record>
-    -->
+            class user(Model):
+            ...
 
-    <!-- Top menu item -->
-    <!--
-    <menuitem name="bikerental" id="bikerental.menu_root"/>
-    -->
-    <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="bikerental.menu_1" parent="bikerental.menu_root"/>
-    <menuitem name="Menu 2" id="bikerental.menu_2" parent="bikerental.menu_root"/>
-    -->
-    <!-- actions -->
-    <!--
-    <menuitem name="List" id="bikerental.menu_1_list" parent="bikerental.menu_1"
-              action="bikerental.action_window"/>
-    <menuitem name="Server to list" id="bikerental" parent="bikerental.menu_2"
-              action="bikerental.action_server"/>
-    -->
-  </data>
+            The system will later instantiate the class once per database (on
+            which the class' module is installed).
+        </field>
+        <field name="is_mail_thread" eval="False"/>
+        <field name="model">bike_requests</field>
+        <field name="name">Bike Requests</field>
+        <field name="state">manual</field>
+        <field name="transient" eval="False"/>
+    </record>
+
 </odoo>
