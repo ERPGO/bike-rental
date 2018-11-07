@@ -17,4 +17,33 @@
         <field name="transient" eval="False"/>
     </record>
 
+
+    <record id="studio_customization.name_x_bike_requests_7c81840b-ebb3-4f65-9396-a25b7fe7aeac" model="ir.model.fields">
+        <field name="domain">[]</field>
+        <field name="field_description">Name</field>
+        <field name="groups" eval="[(6, 0, [])]"/>
+        <field name="model">x_bike_requests</field>
+        <field name="model_id" ref="bikerental.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb"/>
+        <field name="name">x_name</field>
+        <field name="selectable" eval="True"/>
+        <field name="state">manual</field>
+        <field name="store" eval="True"/>
+        <field name="ttype">char</field>
+    </record>
+    <record id="bikerental.contact_x_bike_reque_2b76e693-5067-4946-b433-675facd30258" model="ir.model.fields">
+        <field name="domain">[]</field>
+        <field name="field_description">Customer</field>
+        <field name="groups" eval="[(6, 0, [])]"/>
+        <field name="model">x_bike_requests</field>
+        <field name="model_id" ref="bikerental.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb"/>
+        <field name="name">x_studio_customer</field>
+        <field name="on_delete">set null</field>
+        <field name="relation">res.partner</field>
+        <field name="selectable" eval="True"/>
+        <field name="state">manual</field>
+        <field name="store" eval="True"/>
+        <field name="ttype">many2one</field>
+    </record>
+
+
 </odoo>

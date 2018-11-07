@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="bikerental.bike_requests_group__2760ccaf-dd18-4741-83b5-c9c06c1e5f66" model="ir.model.access">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="bikerental.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb"/>
+    <field name="name">Bike Requests group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="bikerental.bike_requests_group__7d20490f-d4ce-439f-99ae-c25034c21d71" model="ir.model.access">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="bikerental.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb"/>
+    <field name="name">Bike Requests group_user</field>
+    <field name="perm_read" eval="True"/>
+  </record>
+</odoo>
