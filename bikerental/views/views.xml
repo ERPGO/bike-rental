@@ -1,5 +1,5 @@
 <odoo>
-    <record id="bike_request.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb" model="ir.model">
+    <record id="bikerental.bike_requests_a4968d0c-d1c6-44f0-9a4a-78fef0706cdb" model="ir.model">
         <field name="info">Main super-class for regular database-persisted Odoo models.
 
             Odoo models are created by inheriting from this class::
