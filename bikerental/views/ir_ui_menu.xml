@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="bikerental.bike_rental_a3a1cef9-a82e-428b-bfd6-28e6052fcd11" model="ir.ui.menu" >
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bike Rental</field>
+  </record>
+  <record id="bikerental.bike_rental_bike_req_8808a71f-817d-429b-baf6-74bba3204cf2" model="ir.ui.menu">
+    <field name="action" ref="bikerental.bike_requests_4202f922-6444-493c-938d-fc231c26e93f"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bike Requests</field>
+    <field name="parent_id" ref="bikerental.bike_rental_a3a1cef9-a82e-428b-bfd6-28e6052fcd11"/>
+  </record>
+</odoo>

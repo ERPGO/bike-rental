@@ -28,6 +28,9 @@
         'views/views.xml',
         'views/templates.xml',
         'views/ir_model_access.xml',
+        'views/ir_actions_act_window.xml',
+        'views/ir_ui_view.xml',
+        'views/ir_ui_menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

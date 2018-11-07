@@ -45,5 +45,4 @@
         <field name="ttype">many2one</field>
     </record>
 
-
 </odoo>
