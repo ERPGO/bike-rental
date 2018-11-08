@@ -17,5 +17,5 @@ from odoo import models, fields, api
 class RequestRentModel(models.Model):
     _name = 'bike_rental.bike_rental'
 
-    name = fields.Char(string="Rental request")
+    name = fields.Char(string="Rental request", required=True)
     partner_id = fields.Many2one('res.partner', ondelete='set null', string="Customer", store=True)
