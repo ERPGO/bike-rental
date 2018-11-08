@@ -16,7 +16,7 @@
         <!-- FORM view of REQUESTS -->
         <record model="ir.ui.view" id="bike_rental.request_form">
             <field name="name">Bike rental request form</field>
-            <field name="model">bike_rental.request</field>
+            <field name="model">bike_rental.bike_rental</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet string="Bike Requests">
